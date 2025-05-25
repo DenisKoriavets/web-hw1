@@ -1,10 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Додавання викладача</title>
 </head>
 <body>
-
+    <h2>Форма для додавання викладача</h2>
+    <form>
+        <label for="name">ПІБ:</label>
+        <input type="text" id="name" name="name" placeholder="Введіть своє повне ім’я"><br><br>
+        <label>Стать:</label><br>
+        <input type="radio" id="male" name="gender" value="Чоловік">
+        <label for="male">Чоловік</label><br>
+        <input type="radio" id="female" name="gender" value="Жінка">
+        <label for="female">Жінка</label><br><br>
+        <label for="birthday">Дата народження:</label>
+        <input type="date" id="birthday" name="birthday" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Введіть свій email"><br><br>
+        <label for="telephone">Телефон:</label>
+        <input type="tel" id="telephone" name="telephone" placeholder="Введіть свій телефон" pattern="\+380\d{9}" required><br><br>
+        <label for="color">Бажаний колір фону:</label>
+        <input type="color" id="color" name="color" required><br><br>
+        <label for="country">Країна:</label>
+        <select id="country" name="country" required>
+            <option value="">-- Оберіть країну --</option>
+            <option value="ua">Україна</option>
+            <option value="jp">Японія</option>
+            <option value="it">Італія</option>
+            <option value="us">США</option>
+        </select><br><br>
+        <label for="city">Місто:</label>
+        <input type="text" id="city" name="city" placeholder="Введіть місто, де ви проживаєте"><br><br>
+        <label for="comment">Коментар:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Напишіть ваш коментар тут..."></textarea>
+        <br><br>
+        <button type="submit">Надіслати</button>
+    </form>
 </body>
 </html>
